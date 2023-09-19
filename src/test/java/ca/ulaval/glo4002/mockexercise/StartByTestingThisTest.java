@@ -16,8 +16,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.*;
 
@@ -87,6 +86,6 @@ public class StartByTestingThisTest {
     public void whenOneClickBuy_shouldReturnInvoice(){
         Invoice returnedInvoice = service.oneClickBuy(AN_EMAIL, A_PRODUCT_SKU);
 
-        assertNotNull(returnedInvoice);
+        assertEquals(invoice, returnedInvoice);
     }
 }
