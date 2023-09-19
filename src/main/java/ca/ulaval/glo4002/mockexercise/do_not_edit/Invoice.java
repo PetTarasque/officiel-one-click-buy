@@ -11,4 +11,5 @@ public class Invoice {
         this.clientEmail = clientEmail;
         this.lines = lines;
     }
+
 }

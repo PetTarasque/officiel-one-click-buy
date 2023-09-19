@@ -1,6 +1,18 @@
 package ca.ulaval.glo4002.mockexercise;
 
 public class Product {
+    public String getName() {
+        return name;
+    }
+
+    public String getSku() {
+        return sku;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
     private final String sku;
     private final String name;
     private final double price;
